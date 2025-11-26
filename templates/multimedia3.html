@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Multimedia 3 - MP4 y Audio</title>
-<link rel="stylesheet" href="../statics/styles.css">
+    <meta charset="UTF-8">
+    <title>Multimedia 3 – Videos y Audios</title>
+    <link rel="stylesheet" href="../statics/styles.css">
 </head>
-<body class="dark-bg">
 
-<h1 class="title">Multimedia 3 — Videos MP4 y Audios</h1>
+<body>
 
-<div class="media-container">
-    <video controls src="../statics/images/video1.mp4"></video>
-    <video controls src="../statics/images/video2.mp4"></video>
-    <video controls src="../statics/images/video3.mp4"></video>
+<header class="header">
+    <h1>Multimedia 3</h1>
+    <p>Videos MP4 + Audios MP3</p>
+</header>
 
-    <audio controls src="../statics/images/audio1.mp3"></audio>
-    <audio controls src="../statics/images/audio2.mp3"></audio>
-    <audio controls src="../statics/images/audio3.mp3"></audio>
-</div>
+<nav class="nav">
+    <a href="../index.html">Inicio</a>
+    <a href="multimedia1.html">Multimedia 1</a>
+    <a href="multimedia2.html">Multimedia 2</a>
+    <a class="activo" href="multimedia3.html">Multimedia 3</a>
+</nav>
+
+<main class="contenido">
+
+    <h2 class="titulo-seccion">🎬 Videos MP4</h2>
+
+    <!-- VIDEO 1 -->
+    <div class="card">
+        <h3>Video 1</h3>
+        <video controls width="600">
+            <source src="../statics/videos/video1.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="card">
+        <h3>Video 2</h3>
+        <video controls width="600">
+            <source src="../statics/videos/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- VIDEO 3 -->
+    <div class="card">
+        <h3>Video 3</h3>
+        <video controls width="600">
+            <source src="../statics/videos/video3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <h2 class="titulo-seccion">🎵 Audios MP3</h2>
+
+    <!-- AUDIO 1 -->
+    <div class="card">
+        <h3>Audio 1 – Música suave</h3>
+        <audio controls>
+            <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/nmU6N6f-8l0JzZsMyBM-ryqTrZ.png" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- AUDIO 2 -->
+    <div class="card">
+        <h3>Audio 2 – Beats electrónicos</h3>
+        <audio controls>
+            <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/TYVEoKqN_Z4eJd0cBQVWQylaBJ.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- AUDIO 3 -->
+    <div class="card">
+        <h3>Audio 3 – Tema ambiental</h3>
+        <audio controls>
+            <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/Oqe3Ue3eYmbxG-WK-OrPtOZcFQ.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+</main>
+
+<footer class="footer">
+    © 2025 – Proyecto Multimedia
+</footer>
 
 </body>
 </html>
