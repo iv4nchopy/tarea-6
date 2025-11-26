@@ -1,11 +1,13 @@
-window.onload = function () {
+window.onload = function() {
     let nombre = localStorage.getItem("usuarioTP6");
 
     if (!nombre) {
-        nombre = prompt("Bienvenido/a. Ingresa tu nombre y apellido:");
+        nombre = prompt("Bienvenido/a al Proyecto Multimedia de Ivan Acosta. Ingresa tu nombre y apellido:");
         localStorage.setItem("usuarioTP6", nombre);
     }
 
-    document.getElementById("nombreUsuario").innerText = nombre;
-    alert("Hola " + nombre + ", disfruta el proyecto.");
+    const spanNombre = document.getElementById("nombreUsuario");
+    if (spanNombre) {
+        spanNombre.innerText = nombre;
+    }
 };
